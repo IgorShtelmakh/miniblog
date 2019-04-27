@@ -2,6 +2,8 @@
 
 @push('scripts')
     <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <meta property="og:title" content="{{$post->title}}">
+    <meta property="og:image" content="https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg">
 @endpush
 
 @section('content')
