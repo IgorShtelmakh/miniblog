@@ -44,4 +44,8 @@ return [
         ],
     ],
 
+    'facebook' => [
+        'app_id' => env('FB_APP_ID')
+    ]
+
 ];

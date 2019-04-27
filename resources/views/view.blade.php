@@ -26,7 +26,7 @@
 
                                 window.fbAsyncInit = function() {
                                     FB.init({
-                                      appId            : '258406047892626',
+                                      appId            : '{{ config('services.facebook.app_id') }}',
                                       autoLogAppEvents : true,
                                       xfbml            : true,
                                       version          : 'v3.2'
@@ -38,7 +38,7 @@
                                   FB.ui({
                                     method: 'share',
                                     display: 'popup',
-                                    href: 'https://developers.facebook.com/docs/',
+                                    href: '{{Request::url()}}',
                                   }, function(response){});
                                 };
 
