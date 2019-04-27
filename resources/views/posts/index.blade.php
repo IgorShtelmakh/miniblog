@@ -3,14 +3,7 @@
 
 @section('content')
 <div class="container">
-    <!-- Create Task Form... -->
 
-
-   
-
-
-    <!-- Current Tasks -->
-    @if (count($posts) > 0)
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h1>My posts</h1>
@@ -64,8 +57,6 @@
                 </table>
             </div>
         </div>
-    @endif
-
 
 </div>
 @endsection
